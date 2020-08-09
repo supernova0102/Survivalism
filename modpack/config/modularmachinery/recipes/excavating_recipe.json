@@ -1,0 +1,60 @@
+{
+    "machine": "excavatingdrill",
+    "registryName": "Stone Excavating",
+    "recipeTime": 300,
+    "requirements": [
+        {
+            "type": "modularmachinery:energy",
+            "io-type": "input",
+            "energyPerTick": 200
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@3"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@5"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@1"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@1"
+			"chance": 0.05       
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:iron_ore"
+			"chance": 0.05        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:gravel"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:cobblestone"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:dirt:1"
+			"chance": 0.3        
+		}
+    ]
+}

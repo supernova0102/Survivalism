@@ -1,0 +1,68 @@
+{
+    "machine": "excavatingdrillWW",
+    "registryName": "Stone Excavating using Coolant",
+    "recipeTime": 200,
+    "requirements": [
+	{
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "water",
+			"amount": 200,
+			"chance": 0.7
+        },
+	
+        {
+            "type": "modularmachinery:energy",
+            "io-type": "input",
+            "energyPerTick": 200
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@3"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@5"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@1"
+			"chance": 0.3       
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stone@1"
+			"chance": 0.05       
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:iron_ore"
+			"chance": 0.05        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:gravel"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:cobblestone"
+			"chance": 0.3        
+		},
+		{
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:dirt:1"
+			"chance": 0.3        
+		}
+		]
+}
