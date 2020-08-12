@@ -32,10 +32,10 @@ draconicevolution:enchant_reaper
 endercore:xpboost
 endercore:autosmelt
 enderio:witherarrow
-enderio:shimmer
-enderio:repellent
-enderio:soulbound
 enderio:witherweapon
+enderio:shimmer
+enderio:soulbound
+enderio:repellent
 bibliocraft:bibliocraft.deathcompassench
 bibliocraft:bibliocraft.readingench
 cofhcore:holding

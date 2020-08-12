@@ -3,7 +3,9 @@
   "questDatabase:9": {
     "0:10": {
       "questID:3": 0,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        44
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -1399,7 +1401,8 @@
     "32:10": {
       "questID:3": 32,
       "preRequisites:11": [
-        58
+        58,
+        43
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1432,7 +1435,8 @@
     "33:10": {
       "questID:3": 33,
       "preRequisites:11": [
-        58
+        58,
+        44
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1470,7 +1474,8 @@
     "34:10": {
       "questID:3": 34,
       "preRequisites:11": [
-        58
+        58,
+        46
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1628,7 +1633,8 @@
     "38:10": {
       "questID:3": 38,
       "preRequisites:11": [
-        58
+        58,
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1694,7 +1700,8 @@
     "40:10": {
       "questID:3": 40,
       "preRequisites:11": [
-        58
+        58,
+        45
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1717,7 +1724,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Ember",
+          "name:8": "Ember \u0026 Rustichromatia",
           "desc:8": "No Description"
         }
       },
@@ -1727,7 +1734,8 @@
     "41:10": {
       "questID:3": 41,
       "preRequisites:11": [
-        58
+        58,
+        98
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1785,7 +1793,12 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
       "rewards:9": {}
     },
     "43:10": {
@@ -1803,9 +1816,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "forestry:worktable",
+            "id:8": "thermalfoundation:material",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 32,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -1814,11 +1827,17 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "가공과 제작 I",
+          "name:8": "금속 가공 기술",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "advancement_id:8": "minecraft:story/smelt_iron",
+          "index:3": 0,
+          "taskID:8": "bq_standard:advancement"
+        }
+      },
       "rewards:9": {}
     },
     "44:10": {
@@ -1847,117 +1866,24 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "가공과 제작 II",
+          "name:8": "기본 기계역학",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "advancement_id:8": "enderio:gears/g1_wooden_gear",
+          "index:3": 0,
+          "taskID:8": "bq_standard:advancement"
+        }
+      },
       "rewards:9": {}
     },
     "45:10": {
       "questID:3": 45,
       "preRequisites:11": [
-        44
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "immersiveengineering:stone_decoration",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "화학적 가공",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "46:10": {
-      "questID:3": 46,
-      "preRequisites:11": [
-        45,
-        57
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "techguns:basicmachine",
-            "Count:3": 1,
-            "Damage:2": 1,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "가공과 제작 III",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "47:10": {
-      "questID:3": 47,
-      "preRequisites:11": [
-        48
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "appliedenergistics2:grindstone",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "금속 재련",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "48:10": {
-      "questID:3": 48,
-      "preRequisites:11": [
-        44
+        44,
+        47
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1980,17 +1906,35 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "기초 기계학",
+          "name:8": "고급 기계역학",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mystgears:redstone_dynamo",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
-    "49:10": {
-      "questID:3": 49,
+    "46:10": {
+      "questID:3": 46,
       "preRequisites:11": [
-        48
+        44
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2002,9 +1946,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "techguns:itemshared",
+            "id:8": "minecraft:coal",
             "Count:3": 1,
-            "Damage:2": 57,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2013,7 +1957,137 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "실용 기계학",
+          "name:8": "에너지의 활용과 이해",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "advancement_id:8": "minecraft:story/lava_bucket",
+          "index:3": 0,
+          "taskID:8": "bq_standard:advancement"
+        }
+      },
+      "rewards:9": {}
+    },
+    "47:10": {
+      "questID:3": 47,
+      "preRequisites:11": [
+        46
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:redstone",
+            "Count:3": 7,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Redstone Flux",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:redstone",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thermalfoundation:material",
+              "Count:3": 2,
+              "Damage:2": 893,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "48:10": {
+      "questID:3": 48,
+      "preRequisites:11": [
+        46,
+        112
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "embers:shard_ember",
+            "Count:3": 8,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Embers",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "49:10": {
+      "questID:3": 49,
+      "preRequisites:11": [
+        46
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "enderio:item_material",
+            "Count:3": 16,
+            "Damage:2": 20,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "u\u0027I",
           "desc:8": "No Description"
         }
       },
@@ -2023,7 +2097,6 @@
     "50:10": {
       "questID:3": 50,
       "preRequisites:11": [
-        57,
         46
       ],
       "properties:10": {
@@ -2038,7 +2111,7 @@
           "icon:10": {
             "id:8": "immersiveengineering:material",
             "Count:3": 1,
-            "Damage:2": 8,
+            "Damage:2": 26,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2047,15 +2120,194 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "실용 기계학 II",
+          "name:8": "기초적 전자회로",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "projectred-integration:gate",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "51:10": {
       "questID:3": 51,
+      "preRequisites:11": [
+        52
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "techguns:itemshared",
+            "Count:3": 1,
+            "Damage:2": 65,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "복합 연산 체계",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7999999523162842,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "lcrdrfs:laser_creeper",
+            "Fuse:2": 30,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -4681662061396769541,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "ignited:1": 0,
+            "Rotation:9": {
+              "0:5": 2.7083924,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 5114838756430268287,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0,
+            "ExplosionRadius:1": 3
+          },
+          "damageType:8": "",
+          "required:3": 4,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "lcrdrfs:laser_creeper",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "52:10": {
+      "questID:3": 52,
       "preRequisites:11": [
         50
       ],
@@ -2069,7 +2321,83 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "immersiveintelligence:material",
+            "Count:3": 1,
+            "Damage:2": 9,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "전자회로의 소형화",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "amount:3": 300,
+          "isLevels:1": 1,
+          "index:3": 0,
+          "consume:1": 1,
+          "taskID:8": "bq_standard:xp"
+        }
+      },
+      "rewards:9": {}
+    },
+    "53:10": {
+      "questID:3": 53,
+      "preRequisites:11": [
+        63,
+        32
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "immersiveintelligence:metal_decoration",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "54:10": {
+      "questID:3": 54,
+      "preRequisites:11": [
+        39,
+        63
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "integrateddynamics:portable_logic_programmer",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2087,10 +2415,10 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "52:10": {
-      "questID:3": 52,
+    "55:10": {
+      "questID:3": 55,
       "preRequisites:11": [
-        47
+        50
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2102,41 +2430,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "thermalfoundation:material",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "금속 정재",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "53:10": {
-      "questID:3": 53,
-      "preRequisites:11": [
-        52,
-        45
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "immersiveengineering:stone_decoration",
+            "id:8": "minecraft:tallgrass",
             "Count:3": 1,
             "Damage:2": 1,
             "OreDict:8": ""
@@ -2147,84 +2441,172 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "금속 정재 II",
+          "name:8": "생명 공학의 이해",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "54:10": {
-      "questID:3": 54,
-      "preRequisites:11": [
-        56
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "tconstruct:smeltery_controller",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:tallgrass",
+              "Count:3": 4,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:sapling",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "treeSapling"
+            },
+            "2:10": {
+              "id:8": "minecraft:fish",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
           },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "합금과 재련 III",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "55:10": {
-      "questID:3": 55,
-      "preRequisites:11": [
-        52,
-        57
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "actuallyadditions:block_grinder",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7999999523162842,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.23000000417232513,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 48.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 6.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:blaze",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -6850815247422944698,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 2.881301,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 997250854635914790,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
           },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "금속 정재 II",
-          "desc:8": "No Description"
+          "damageType:8": "",
+          "required:3": 8,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:blaze",
+          "subtypes:1": 1
         }
       },
-      "tasks:9": {},
       "rewards:9": {}
     },
     "56:10": {
       "questID:3": 56,
       "preRequisites:11": [
-        53
+        72,
+        41
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2236,9 +2618,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "immersiveengineering:stone_decoration",
+            "id:8": "draconicevolution:draconium_chest",
             "Count:3": 1,
-            "Damage:2": 10,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2247,7 +2629,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "합금과 재련 II",
+          "name:8": "New Quest",
           "desc:8": "No Description"
         }
       },
@@ -2257,7 +2639,8 @@
     "57:10": {
       "questID:3": 57,
       "preRequisites:11": [
-        49
+        41,
+        74
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2269,7 +2652,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:redstone",
+            "id:8": "draconicevolution:reactor_core",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2280,7 +2663,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "기초 에너지 역학",
+          "name:8": "New Quest",
           "desc:8": "No Description"
         }
       },
@@ -2311,7 +2694,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
+          "name:8": "실전! 기술 개발!",
           "desc:8": "No Description"
         }
       },
@@ -2321,7 +2704,8 @@
     "59:10": {
       "questID:3": 59,
       "preRequisites:11": [
-        58
+        58,
+        43
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2348,13 +2732,19 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
       "rewards:9": {}
     },
     "60:10": {
       "questID:3": 60,
       "preRequisites:11": [
-        58
+        58,
+        43
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2381,13 +2771,20 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
       "rewards:9": {}
     },
     "61:10": {
       "questID:3": 61,
       "preRequisites:11": [
-        58
+        58,
+        60,
+        46
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2414,13 +2811,38 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "lcrdrfs:creeper_plasma",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:fermented_spider_eye",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "62:10": {
       "questID:3": 62,
       "preRequisites:11": [
-        58
+        58,
+        45
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2447,13 +2869,32 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:gunpowder",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "63:10": {
       "questID:3": 63,
       "preRequisites:11": [
-        58
+        58,
+        50
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2465,9 +2906,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "immersiveintelligence:material",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 12,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2476,7 +2917,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
+          "name:8": "논리 연산",
           "desc:8": "No Description"
         }
       },
@@ -2627,6 +3068,48 @@
       "rewards:9": {}
     },
     "68:10": {
+      "questID:3": 68,
+      "preRequisites:11": [
+        41,
+        93
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:draconic_helm",
+            "Count:3": 1,
+            "tag:10": {
+              "DEUpgrades:10": {
+                "shieldRec:1": 3,
+                "shieldCap:1": 3,
+                "rfCap:1": 3
+              },
+              "Energy:3": 256000000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "69:10": {
       "questID:3": 69,
       "preRequisites:11": [
         33,
@@ -2660,7 +3143,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "69:10": {
+    "70:10": {
       "questID:3": 70,
       "preRequisites:11": [
         33,
@@ -2694,7 +3177,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "70:10": {
+    "71:10": {
       "questID:3": 71,
       "preRequisites:11": [
         33,
@@ -2728,10 +3211,11 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "71:10": {
+    "72:10": {
       "questID:3": 72,
       "preRequisites:11": [
-        58
+        58,
+        43
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2758,13 +3242,39 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:rotten_flesh",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:spider_eye",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
-    "72:10": {
+    "73:10": {
       "questID:3": 73,
       "preRequisites:11": [
-        58
+        58,
+        45,
+        51
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2797,10 +3307,11 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "73:10": {
+    "74:10": {
       "questID:3": 74,
       "preRequisites:11": [
-        58
+        58,
+        46
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2834,7 +3345,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "74:10": {
+    "75:10": {
       "questID:3": 75,
       "preRequisites:11": [
         34,
@@ -2868,7 +3379,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "75:10": {
+    "76:10": {
       "questID:3": 76,
       "preRequisites:11": [
         34,
@@ -2902,7 +3413,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "76:10": {
+    "77:10": {
       "questID:3": 77,
       "preRequisites:11": [
         34,
@@ -2936,7 +3447,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "77:10": {
+    "78:10": {
       "questID:3": 78,
       "preRequisites:11": [
         34,
@@ -2970,7 +3481,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "78:10": {
+    "79:10": {
       "questID:3": 79,
       "preRequisites:11": [
         34,
@@ -3004,7 +3515,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "79:10": {
+    "80:10": {
       "questID:3": 80,
       "preRequisites:11": [
         34,
@@ -3038,7 +3549,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "80:10": {
+    "81:10": {
       "questID:3": 81,
       "preRequisites:11": [
         32,
@@ -3075,7 +3586,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "81:10": {
+    "82:10": {
       "questID:3": 82,
       "preRequisites:11": [
         32,
@@ -3115,7 +3626,41 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "82:10": {
+    "83:10": {
+      "questID:3": 83,
+      "preRequisites:11": [
+        41,
+        62
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:grinder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "84:10": {
       "questID:3": 84,
       "preRequisites:11": [
         37,
@@ -3152,7 +3697,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "83:10": {
+    "85:10": {
       "questID:3": 85,
       "preRequisites:11": [
         37
@@ -3185,7 +3730,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "84:10": {
+    "86:10": {
       "questID:3": 86,
       "preRequisites:11": [
         37,
@@ -3219,7 +3764,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "85:10": {
+    "87:10": {
       "questID:3": 87,
       "preRequisites:11": [
         38,
@@ -3253,7 +3798,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "86:10": {
+    "88:10": {
       "questID:3": 88,
       "preRequisites:11": [
         38,
@@ -3287,11 +3832,11 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "87:10": {
+    "89:10": {
       "questID:3": 89,
       "preRequisites:11": [
-        60,
-        39
+        39,
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3303,7 +3848,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "integrateddynamics:mechanical_squeezer",
+            "id:8": "integrateddynamics:squeezer",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -3321,7 +3866,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "88:10": {
+    "90:10": {
       "questID:3": 90,
       "preRequisites:11": [
         38,
@@ -3355,7 +3900,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "89:10": {
+    "91:10": {
       "questID:3": 91,
       "preRequisites:11": [
         38,
@@ -3389,7 +3934,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "90:10": {
+    "92:10": {
       "questID:3": 92,
       "preRequisites:11": [
         38,
@@ -3423,10 +3968,11 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "91:10": {
+    "93:10": {
       "questID:3": 93,
       "preRequisites:11": [
-        58
+        58,
+        52
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3456,7 +4002,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "92:10": {
+    "94:10": {
       "questID:3": 94,
       "preRequisites:11": [
         34,
@@ -3490,7 +4036,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "93:10": {
+    "95:10": {
       "questID:3": 95,
       "preRequisites:11": [
         38,
@@ -3542,7 +4088,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "94:10": {
+    "96:10": {
       "questID:3": 96,
       "preRequisites:11": [
         32,
@@ -3582,7 +4128,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "95:10": {
+    "97:10": {
       "questID:3": 97,
       "preRequisites:11": [
         72,
@@ -3616,10 +4162,200 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "96:10": {
+    "98:10": {
       "questID:3": 98,
       "preRequisites:11": [
+        100
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:draconium_dust",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "기술적 특이점 I",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 15.699999988079071,
+              "4:6": 8.0,
+              "5:6": 15.699999988079071
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 200.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.699999988079071,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DragonPhase:3": 10,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:ender_dragon",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -6632381780301736129,
+            "Health:5": 200.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 5.944048,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 5265804350104096150,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:ender_dragon",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "99:10": {
+      "questID:3": 99,
+      "preRequisites:11": [
+        100,
+        51,
         49
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "enderio:item_material",
+            "Count:3": 1,
+            "Damage:2": 43,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "생체 부품",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "100:10": {
+      "questID:3": 100,
+      "preRequisites:11": [
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3633,7 +4369,7 @@
           "icon:10": {
             "id:8": "techguns:itemshared",
             "Count:3": 1,
-            "Damage:2": 33,
+            "Damage:2": 61,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3642,84 +4378,22 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "총기 제조학",
+          "name:8": "생물의 특성 이해와 활용",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "97:10": {
-      "questID:3": 99,
-      "preRequisites:11": [
-        57
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "embers:ember_cluster",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
         }
       },
-      "tasks:9": {},
       "rewards:9": {}
     },
-    "98:10": {
-      "questID:3": 100,
-      "preRequisites:11": [
-        50
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "techguns:basicmachine",
-            "Count:3": 1,
-            "Damage:2": 2,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "화학적 가공 II",
-          "desc:8": "No Description"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "99:10": {
+    "101:10": {
       "questID:3": 101,
       "preRequisites:11": [
-        98,
-        46
+        98
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3731,9 +4405,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "avaritia:resource",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 5,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3742,14 +4416,60 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
+          "name:8": "기술적 특이점 II",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "UUIDLeast:4": -8789559286829354005,
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 1.699999988079071,
+              "4:6": 2.0,
+              "5:6": 1.699999988079071
+            },
+            "Invulnerable:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "PortalCooldown:3": 0,
+            "Rotation:9": {
+              "0:5": 0.0,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "FallDistance:5": 0.0,
+            "UUIDMost:4": 960821569120390428,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "id:8": "minecraft:ender_crystal",
+            "ShowBottom:1": 1
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:ender_crystal",
+          "subtypes:1": 1
+        }
+      },
       "rewards:9": {}
     },
-    "100:10": {
+    "102:10": {
       "questID:3": 102,
       "preRequisites:11": [
         40,
@@ -3784,7 +4504,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "101:10": {
+    "103:10": {
       "questID:3": 103,
       "preRequisites:11": [
         40,
@@ -3800,7 +4520,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "rustichromia:gin",
+            "id:8": "rustichromia:quern",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -3818,7 +4538,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "102:10": {
+    "104:10": {
       "questID:3": 104,
       "preRequisites:11": [
         40,
@@ -3852,7 +4572,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "103:10": {
+    "105:10": {
       "questID:3": 105,
       "preRequisites:11": [
         40,
@@ -3886,7 +4606,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "104:10": {
+    "106:10": {
       "questID:3": 106,
       "preRequisites:11": [
         40,
@@ -3920,7 +4640,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "105:10": {
+    "107:10": {
       "questID:3": 107,
       "preRequisites:11": [
         40,
@@ -3954,7 +4674,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "106:10": {
+    "108:10": {
       "questID:3": 108,
       "preRequisites:11": [
         40,
@@ -3988,10 +4708,11 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "107:10": {
+    "109:10": {
       "questID:3": 109,
       "preRequisites:11": [
-        58
+        58,
+        119
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4021,7 +4742,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "108:10": {
+    "110:10": {
       "questID:3": 110,
       "preRequisites:11": [
         109,
@@ -4037,7 +4758,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "appliedenergistics2:inscriber",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -4055,12 +4776,43 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "109:10": {
+    "111:10": {
       "questID:3": 111,
       "preRequisites:11": [
         109,
         59
       ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:grindstone",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "112:10": {
+      "questID:3": 112,
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -4082,14 +4834,140 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
+          "name:8": "고대의 기술",
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7999999523162842,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 40.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.5,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 32.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 6.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "embers:ancient_golem",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -6524095926686420871,
+            "Health:5": 40.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 4.0553203,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": -4173091316321466656,
+            "lastPickaxeHit:4": 0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "embers:ancient_golem",
+          "subtypes:1": 1
+        }
+      },
       "rewards:9": {}
     },
-    "110:10": {
+    "113:10": {
       "questID:3": 113,
       "preRequisites:11": [
         109,
@@ -4108,6 +4986,3109 @@
             "id:8": "appliedenergistics2:storage_cell_64k",
             "Count:3": 1,
             "tag:10": {},
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "114:10": {
+      "questID:3": 114,
+      "preRequisites:11": [
+        109,
+        63
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:crafting_unit",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "115:10": {
+      "questID:3": 115,
+      "preRequisites:11": [
+        33
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "techguns:orecluster",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "116:10": {
+      "questID:3": 116,
+      "preRequisites:11": [
+        37,
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "forestry:bee_queen_ge",
+            "Count:3": 1,
+            "tag:10": {
+              "MaxH:3": 30,
+              "Mate:10": {
+                "Chromosomes:9": {
+                  "0:10": {
+                    "UID1:8": "extrabees.species.gold",
+                    "UID0:8": "extrabees.species.gold",
+                    "Slot:1": 0
+                  },
+                  "1:10": {
+                    "UID1:8": "forestry.speedSlowest",
+                    "UID0:8": "forestry.speedSlowest",
+                    "Slot:1": 1
+                  },
+                  "2:10": {
+                    "UID1:8": "forestry.lifespanShort",
+                    "UID0:8": "forestry.lifespanShort",
+                    "Slot:1": 2
+                  },
+                  "3:10": {
+                    "UID1:8": "forestry.fertilityLow",
+                    "UID0:8": "forestry.fertilityLow",
+                    "Slot:1": 3
+                  },
+                  "4:10": {
+                    "UID1:8": "forestry.toleranceBoth2",
+                    "UID0:8": "forestry.toleranceBoth2",
+                    "Slot:1": 4
+                  },
+                  "5:10": {
+                    "UID1:8": "forestry.boolTrue",
+                    "UID0:8": "forestry.boolTrue",
+                    "Slot:1": 5
+                  },
+                  "6:10": {
+                    "UID1:8": "forestry.toleranceBoth2",
+                    "UID0:8": "forestry.toleranceBoth2",
+                    "Slot:1": 6
+                  },
+                  "7:10": {
+                    "UID1:8": "forestry.boolTrue",
+                    "UID0:8": "forestry.boolTrue",
+                    "Slot:1": 7
+                  },
+                  "8:10": {
+                    "UID1:8": "forestry.boolTrue",
+                    "UID0:8": "forestry.boolTrue",
+                    "Slot:1": 8
+                  },
+                  "9:10": {
+                    "UID1:8": "extrabees.flower.rock",
+                    "UID0:8": "extrabees.flower.rock",
+                    "Slot:1": 9
+                  },
+                  "10:10": {
+                    "UID1:8": "forestry.floweringSlowest",
+                    "UID0:8": "forestry.floweringSlowest",
+                    "Slot:1": 10
+                  },
+                  "11:10": {
+                    "UID1:8": "forestry.territoryAverage",
+                    "UID0:8": "forestry.territoryAverage",
+                    "Slot:1": 11
+                  },
+                  "12:10": {
+                    "UID1:8": "forestry.effectNone",
+                    "UID0:8": "forestry.effectNone",
+                    "Slot:1": 12
+                  }
+                }
+              },
+              "Health:3": 30,
+              "IsAnalyzed:1": 0,
+              "Genome:10": {
+                "Chromosomes:9": {
+                  "0:10": {
+                    "UID1:8": "extrabees.species.gold",
+                    "UID0:8": "extrabees.species.gold",
+                    "Slot:1": 0
+                  },
+                  "1:10": {
+                    "UID1:8": "forestry.speedSlowest",
+                    "UID0:8": "forestry.speedSlowest",
+                    "Slot:1": 1
+                  },
+                  "2:10": {
+                    "UID1:8": "forestry.lifespanShort",
+                    "UID0:8": "forestry.lifespanShort",
+                    "Slot:1": 2
+                  },
+                  "3:10": {
+                    "UID1:8": "forestry.fertilityLow",
+                    "UID0:8": "forestry.fertilityLow",
+                    "Slot:1": 3
+                  },
+                  "4:10": {
+                    "UID1:8": "forestry.toleranceBoth2",
+                    "UID0:8": "forestry.toleranceBoth2",
+                    "Slot:1": 4
+                  },
+                  "5:10": {
+                    "UID1:8": "forestry.boolTrue",
+                    "UID0:8": "forestry.boolTrue",
+                    "Slot:1": 5
+                  },
+                  "6:10": {
+                    "UID1:8": "forestry.toleranceBoth2",
+                    "UID0:8": "forestry.toleranceBoth2",
+                    "Slot:1": 6
+                  },
+                  "7:10": {
+                    "UID1:8": "forestry.boolTrue",
+                    "UID0:8": "forestry.boolTrue",
+                    "Slot:1": 7
+                  },
+                  "8:10": {
+                    "UID1:8": "forestry.boolTrue",
+                    "UID0:8": "forestry.boolTrue",
+                    "Slot:1": 8
+                  },
+                  "9:10": {
+                    "UID1:8": "extrabees.flower.rock",
+                    "UID0:8": "extrabees.flower.rock",
+                    "Slot:1": 9
+                  },
+                  "10:10": {
+                    "UID1:8": "forestry.floweringSlowest",
+                    "UID0:8": "forestry.floweringSlowest",
+                    "Slot:1": 10
+                  },
+                  "11:10": {
+                    "UID1:8": "forestry.territoryAverage",
+                    "UID0:8": "forestry.territoryAverage",
+                    "Slot:1": 11
+                  },
+                  "12:10": {
+                    "UID1:8": "forestry.effectNone",
+                    "UID0:8": "forestry.effectNone",
+                    "Slot:1": 12
+                  }
+                }
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "117:10": {
+      "questID:3": 117,
+      "preRequisites:11": [
+        33,
+        93
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "techguns:miningdrill",
+            "Count:3": 1,
+            "tag:10": {
+              "ammo:2": 300,
+              "ammovariant:8": "default",
+              "miningHead:3": 0,
+              "camo:1": 0
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "118:10": {
+      "questID:3": 118,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "외계의 기술",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:ender_pearl",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "enderio:block_enderman_skull",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "119:10": {
+      "questID:3": 119,
+      "preRequisites:11": [
+        52,
+        118
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:storage_cell_64k",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "원자단위 물체 분해 기술",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:sky_stone_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "appliedenergistics2:sky_stone_block",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "120:10": {
+      "questID:3": 120,
+      "preRequisites:11": [
+        32,
+        73
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "immersiveengineering:metal_device1",
+            "Count:3": 1,
+            "Damage:2": 13,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "121:10": {
+      "questID:3": 121,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:spider"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 1.0999999642372131,
+              "4:6": 0.8999999761581421,
+              "5:6": 1.0999999642372131
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.30000001192092896,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:spider",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -5541739829848154278,
+            "Health:5": 16.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 4.124756,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": -2277706691061199537,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:spider",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "122:10": {
+      "questID:3": 122,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:creeper"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7000000476837158,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:creeper",
+            "Fuse:2": 30,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -8959246174300503490,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "ignited:1": 0,
+            "Rotation:9": {
+              "0:5": 5.921562,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 5189193824578586327,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0,
+            "ExplosionRadius:1": 3
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:creeper",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "123:10": {
+      "questID:3": 123,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "aqua_creepers:aqua_creeper"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.949999988079071,
+              "4:6": 1.0,
+              "5:6": 0.949999988079071
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.8,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 4.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "aqua_creepers:aqua_creeper",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -6789941807829092956,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 5.74246,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 6244248870106974585,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "aqua_creepers:aqua_creeper",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "124:10": {
+      "questID:3": 124,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:zombie"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "125:10": {
+      "questID:3": 125,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "primitivemobs:festive_creeper"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "126:10": {
+      "questID:3": 126,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "primitivemobs:rocket_creeper"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7000000476837158,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.35,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "ForcedAge:3": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "Rocket:1": 0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {},
+              "multimob:tameable:10": {
+                "OwnerUUID:8": "",
+                "FollowState:3": 0
+              }
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "primitivemobs:rocket_creeper",
+            "Age:3": 1,
+            "Fuse:2": 30,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -5487402681811785715,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "ignited:1": 0,
+            "Rotation:9": {
+              "0:5": 3.262163,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": -8332571210243815120,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0,
+            "ExplosionRadius:1": 3
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "primitivemobs:rocket_creeper",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "127:10": {
+      "questID:3": 127,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "lcrdrfs:laser_creeper"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7999999523162842,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "lcrdrfs:laser_creeper",
+            "Fuse:2": 30,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -7305224091263299799,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "ignited:1": 0,
+            "Rotation:9": {
+              "0:5": 0.62231535,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": -4979681527163304530,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0,
+            "ExplosionRadius:1": 3
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "lcrdrfs:laser_creeper",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "128:10": {
+      "questID:3": 128,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "primitivemobs:support_creeper"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "129:10": {
+      "questID:3": 129,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:skeleton"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.9900000095367432,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:skeleton",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -8231249019951271582,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 2.3870485,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 902652228001024267,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:skeleton",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "130:10": {
+      "questID:3": 130,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "primitivemobs:mother_spider"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "131:10": {
+      "questID:3": 131,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "lcrdrfs:jet_pack_spider"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {},
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:zombie",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "132:10": {
+      "questID:3": 132,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:zombie_villager"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "133:10": {
+      "questID:3": 133,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "techguns:skeletonsoldier"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7999999523162842,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 25.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 50.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 4.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {},
+              "techguns:shootervalues:10": {},
+              "techguns:genericnpcdata:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "techguns:skeletonsoldier",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -8594967653051306261,
+            "Health:5": 25.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 3.943316,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 8275635607016328651,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "techguns:skeletonsoldier",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "134:10": {
+      "questID:3": 134,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "techguns:zombiesoldier"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "135:10": {
+      "questID:3": 135,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "techguns:zombiefarmer"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "136:10": {
+      "questID:3": 136,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "primitivemobs:skeleton_warrior"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.9900000095367432,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 25.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "primitivemobs:skeleton_warrior",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -7123813263474260971,
+            "Health:5": 25.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 1.8154658,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 1668938930323539743,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "primitivemobs:skeleton_warrior",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "137:10": {
+      "questID:3": 137,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:enderman"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 2.9000000953674316,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 40.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.30000001192092896,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 64.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 7.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:enderman",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -5362325487059158951,
+            "Health:5": 40.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 1.7098861,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": -2504346727482046120,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:enderman",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "138:10": {
+      "questID:3": 138,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "techguns:zombieminer"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "139:10": {
+      "questID:3": 139,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:iron_block",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 1.0999999642372131,
+              "4:6": 2.700000047683716,
+              "5:6": 1.0999999642372131
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 100.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.25,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:villager_golem",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -8873615567051427382,
+            "Health:5": 100.0,
+            "PlayerCreated:1": 0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 0.08663843,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 3816718424458350172,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:villager_golem",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "140:10": {
+      "questID:3": 140,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "embers:ancient_golem"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.30000001192092896,
+              "4:6": 1.7999999523162842,
+              "5:6": 0.30000001192092896
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 40.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.5,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 32.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 6.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "embers:ancient_golem",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -6039833166526330717,
+            "Health:5": 40.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 4.4609776,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 575083091062836364,
+            "lastPickaxeHit:4": 0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "embers:ancient_golem",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "141:10": {
+      "questID:3": 141,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "lcrdrfs:robo_dino"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "color:1": 0,
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 2.199999988079071,
+              "4:6": 2.0,
+              "5:6": 2.199999988079071
+            },
+            "Sitting:1": 0,
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 80.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.75,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.7,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 6.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "ForcedAge:3": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "InLove:3": 0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "lcrdrfs:robo_dino",
+            "Age:3": 1,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -7000883603756294178,
+            "Health:5": 80.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 5.3351545,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "tameState:1": 0,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "OwnerUUID:8": "",
+            "UUIDMost:4": 574797675365943013,
+            "size:3": 64,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "lcrdrfs:robo_dino",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "142:10": {
+      "questID:3": 142,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "scalinghealth:heartcontainer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "143:10": {
+      "questID:3": 143,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "minecraft:vex"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "144:10": {
+      "questID:3": 144,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "145:10": {
+      "questID:3": 145,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "146:10": {
+      "questID:3": 146,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "techguns:supermutantbasic"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "RelativeAABB:9": {
+              "0:6": -0.30000001192092896,
+              "1:6": 0.0,
+              "2:6": -0.30000001192092896,
+              "3:6": 0.699999988079071,
+              "4:6": 2.700000047683716,
+              "5:6": 0.699999988079071
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 0.0,
+                "Name:8": "techguns.radiationResistance"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.scales"
+              },
+              "2:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.spears"
+              },
+              "3:10": {
+                "Base:6": 35.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "5:10": {
+                "Base:6": 0.3,
+                "Name:8": "generic.movementSpeed"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "7:10": {
+                "Base:6": 1.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "8:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "9:10": {
+                "Base:6": 50.0,
+                "Name:8": "generic.followRange"
+              },
+              "10:10": {
+                "Base:6": 7.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "techguns:deathtype:10": {},
+              "techguns:shootervalues:10": {},
+              "techguns:genericnpcdata:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "techguns:supermutantbasic",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -5394781353691508144,
+            "Health:5": 35.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 2.389289,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 4702347566054720208,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "techguns:supermutantbasic",
+          "subtypes:1": 1
+        }
+      },
+      "rewards:9": {}
+    },
+    "147:10": {
+      "questID:3": 147,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:netherrack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "148:10": {
+      "questID:3": 148,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "149:10": {
+      "questID:3": 149,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -4383,7 +8364,7 @@
           "desc:8": "총기 제조와 방어 수단에 대한 설명입니다."
         }
       },
-      "order:3": 1
+      "order:3": 3
     },
     "1:10": {
       "quests:9": {},
@@ -4465,345 +8446,422 @@
         },
         "8:10": {
           "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": 180,
+          "id:3": 53,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 180,
+          "id:3": 54,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 156,
+          "y:3": 108,
+          "id:3": 56,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": 156,
+          "y:3": 216,
+          "id:3": 57,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
           "x:3": -168,
           "y:3": -72,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "9:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": -36,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "10:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 0,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "11:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 36,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "12:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 72,
           "id:3": 62,
           "sizeY:3": 24
         },
-        "13:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 180,
           "id:3": 63,
           "sizeY:3": 24
         },
-        "14:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -36,
           "id:3": 64,
           "sizeY:3": 24
         },
-        "15:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 0,
           "id:3": 65,
           "sizeY:3": 24
         },
-        "16:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 36,
           "id:3": 66,
           "sizeY:3": 24
         },
-        "17:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 72,
           "id:3": 67,
           "sizeY:3": 24
         },
-        "18:10": {
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": 156,
+          "y:3": 252,
+          "id:3": 68,
+          "sizeY:3": 24
+        },
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 0,
           "id:3": 69,
           "sizeY:3": 24
         },
-        "19:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 36,
           "id:3": 70,
           "sizeY:3": 24
         },
-        "20:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 72,
           "id:3": 71,
           "sizeY:3": 24
         },
-        "21:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 108,
           "id:3": 72,
           "sizeY:3": 24
         },
-        "22:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 144,
           "id:3": 73,
           "sizeY:3": 24
         },
-        "23:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 216,
           "id:3": 74,
           "sizeY:3": 24
         },
-        "24:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -36,
           "id:3": 75,
           "sizeY:3": 24
         },
-        "25:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 0,
           "id:3": 76,
           "sizeY:3": 24
         },
-        "26:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 36,
           "id:3": 77,
           "sizeY:3": 24
         },
-        "27:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 108,
           "id:3": 78,
           "sizeY:3": 24
         },
-        "28:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 144,
           "id:3": 79,
           "sizeY:3": 24
         },
-        "29:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 216,
           "id:3": 80,
           "sizeY:3": 24
         },
-        "30:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 108,
           "id:3": 81,
           "sizeY:3": 24
         },
-        "31:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 216,
           "id:3": 82,
           "sizeY:3": 24
         },
-        "32:10": {
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 156,
+          "y:3": 72,
+          "id:3": 83,
+          "sizeY:3": 24
+        },
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 144,
           "id:3": 84,
           "sizeY:3": 24
         },
-        "33:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 0,
           "id:3": 85,
           "sizeY:3": 24
         },
-        "34:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 216,
           "id:3": 86,
           "sizeY:3": 24
         },
-        "35:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -36,
           "id:3": 87,
           "sizeY:3": 24
         },
-        "36:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 0,
           "id:3": 88,
           "sizeY:3": 24
         },
-        "37:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 48,
-          "y:3": 0,
+          "y:3": -36,
           "id:3": 89,
           "sizeY:3": 24
         },
-        "38:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 108,
           "id:3": 90,
           "sizeY:3": 24
         },
-        "39:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 144,
           "id:3": 91,
           "sizeY:3": 24
         },
-        "40:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 216,
           "id:3": 92,
           "sizeY:3": 24
         },
-        "41:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 252,
           "id:3": 93,
           "sizeY:3": 24
         },
-        "42:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": 252,
           "id:3": 94,
           "sizeY:3": 24
         },
-        "43:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 252,
           "id:3": 95,
           "sizeY:3": 24
         },
-        "44:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 252,
           "id:3": 96,
           "sizeY:3": 24
         },
-        "45:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 108,
           "id:3": 97,
           "sizeY:3": 24
         },
-        "46:10": {
+        "52:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 0,
           "id:3": 102,
           "sizeY:3": 24
         },
-        "47:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -36,
           "id:3": 103,
           "sizeY:3": 24
         },
-        "48:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 36,
           "id:3": 104,
           "sizeY:3": 24
         },
-        "49:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 72,
           "id:3": 105,
           "sizeY:3": 24
         },
-        "50:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 108,
           "id:3": 106,
           "sizeY:3": 24
         },
-        "51:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 216,
           "id:3": 107,
           "sizeY:3": 24
         },
-        "52:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 252,
           "id:3": 108,
           "sizeY:3": 24
         },
-        "53:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": -72,
           "id:3": 109,
           "sizeY:3": 24
         },
-        "54:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 0,
           "id:3": 110,
           "sizeY:3": 24
         },
-        "55:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": -36,
           "id:3": 111,
           "sizeY:3": 24
         },
-        "56:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 108,
           "id:3": 113,
+          "sizeY:3": 24
+        },
+        "63:10": {
+          "sizeX:3": 24,
+          "x:3": 120,
+          "y:3": 180,
+          "id:3": 114,
+          "sizeY:3": 24
+        },
+        "64:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": 216,
+          "id:3": 115,
+          "sizeY:3": 24
+        },
+        "65:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 36,
+          "id:3": 116,
+          "sizeY:3": 24
+        },
+        "66:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": 252,
+          "id:3": 117,
+          "sizeY:3": 24
+        },
+        "67:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": 144,
+          "id:3": 120,
           "sizeY:3": 24
         }
       },
@@ -4823,7 +8881,7 @@
           "desc:8": "No Description"
         }
       },
-      "order:3": 3
+      "order:3": 2
     },
     "3:10": {
       "quests:9": {},
@@ -4843,7 +8901,7 @@
           "desc:8": "No Description"
         }
       },
-      "order:3": 4
+      "order:3": 5
     },
     "4:10": {
       "quests:9": {
@@ -4870,14 +8928,14 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -12,
+          "x:3": 24,
+          "y:3": 24,
           "id:3": 45,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 60,
           "y:3": -12,
           "id:3": 46,
           "sizeY:3": 24
@@ -4885,106 +8943,99 @@
         "5:10": {
           "sizeX:3": 24,
           "x:3": 60,
-          "y:3": -48,
+          "y:3": 24,
           "id:3": 47,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
           "x:3": 60,
-          "y:3": -12,
+          "y:3": 96,
           "id:3": 48,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
           "x:3": 60,
-          "y:3": 24,
+          "y:3": 132,
           "id:3": 49,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 24,
+          "x:3": 96,
+          "y:3": -12,
           "id:3": 50,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 24,
+          "x:3": 96,
+          "y:3": 60,
           "id:3": 51,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
           "x:3": 96,
-          "y:3": -48,
+          "y:3": 24,
           "id:3": 52,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -84,
-          "id:3": 53,
+          "x:3": 132,
+          "y:3": -12,
+          "id:3": 55,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
           "x:3": 168,
-          "y:3": -84,
-          "id:3": 54,
+          "y:3": 24,
+          "id:3": 98,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
           "x:3": 132,
-          "y:3": -48,
-          "id:3": 55,
+          "y:3": 132,
+          "id:3": 99,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
           "x:3": 132,
-          "y:3": -84,
-          "id:3": 56,
+          "y:3": 24,
+          "id:3": 100,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 204,
           "y:3": 24,
-          "id:3": 57,
+          "id:3": 101,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 60,
-          "id:3": 98,
+          "x:3": -48,
+          "y:3": 96,
+          "id:3": 112,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 96,
-          "id:3": 99,
+          "x:3": -48,
+          "y:3": 132,
+          "id:3": 118,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": -12,
-          "id:3": 100,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 60,
-          "id:3": 101,
+          "x:3": 96,
+          "y:3": 132,
+          "id:3": 119,
           "sizeY:3": 24
         }
       },
@@ -5004,7 +9055,231 @@
           "desc:8": "No Description"
         }
       },
-      "order:3": 2
+      "order:3": 1
+    },
+    "5:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": -48,
+          "id:3": 121,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -48,
+          "id:3": 122,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": -48,
+          "id:3": 123,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 24,
+          "id:3": 124,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -84,
+          "id:3": 125,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": -84,
+          "id:3": 126,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": -120,
+          "id:3": 127,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -120,
+          "id:3": 128,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 24,
+          "id:3": 129,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": -48,
+          "id:3": 130,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": -84,
+          "id:3": 131,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 24,
+          "id:3": 132,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 24,
+          "id:3": 133,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 60,
+          "id:3": 134,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 60,
+          "id:3": 135,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": 60,
+          "id:3": 136,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -12,
+          "id:3": 137,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 96,
+          "id:3": 138,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 24,
+          "id:3": 139,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -48,
+          "y:3": -12,
+          "id:3": 140,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -120,
+          "id:3": 141,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -12,
+          "id:3": 142,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 60,
+          "id:3": 143,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": -12,
+          "id:3": 144,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": -12,
+          "id:3": 145,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -84,
+          "id:3": 146,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -48,
+          "id:3": 147,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": 60,
+          "id:3": 148,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 96,
+          "id:3": 149,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 5,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "name:8": "적대적 생명체",
+          "icon:10": {
+            "id:8": "minecraft:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description"
+        }
+      },
+      "order:3": 4
     }
   },
   "questSettings:10": {

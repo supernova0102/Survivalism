@@ -221,9 +221,9 @@ appliedenergistics2:appeng.entity.entitytinytntprimed
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
+enderio:falling_machine
 enderio:owl_egg
 enderio:primed_charge
-enderio:falling_machine
 natura:imp
 natura:nitrocreeper
 tconstruct:blueslime
@@ -236,9 +236,9 @@ tconstruct:throwball
 enderiomachines:weather_rocket
 actuallyadditions:worm
 betterquesting:placeholder
-forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
+forestry:butterflyge
 coroutil:bat_smart
 engineersdecor:chair_entity
 immersiveengineering:revolvershot
