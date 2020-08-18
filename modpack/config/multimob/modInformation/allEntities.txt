@@ -81,6 +81,9 @@ minecraft:llama_spit
 minecraft:parrot
 minecraft:villager
 minecraft:ender_crystal
+biomesoplenty:mudball
+biomesoplenty:bop_boat
+biomesoplenty:wasp
 aqua_creepers:aqua_creeper
 avaritia:endest_pearl
 avaritia:gaping_void
@@ -92,10 +95,6 @@ thermalfoundation:basalz
 thermalfoundation:blizz_bolt
 thermalfoundation:blitz_bolt
 thermalfoundation:basalz_bolt
-bibliocraft:biblioseat
-buildinggadgets:blockbuildentity
-buildinggadgets:constructionblockentity
-clumps:xp_orb_big
 draconicevolution:persistentitem
 draconicevolution:dragonheartitem
 draconicevolution:chaosguardian
@@ -105,6 +104,12 @@ draconicevolution:entitychaosenergyvortex
 draconicevolution:customarrow
 draconicevolution:lootcore
 draconicevolution:enderenergymanipulator
+thermalexpansion:florb
+thermalexpansion:morb
+bibliocraft:biblioseat
+buildinggadgets:blockbuildentity
+buildinggadgets:constructionblockentity
+clumps:xp_orb_big
 embers:ember_packet
 embers:ember_projectile
 embers:ancient_golem
@@ -221,11 +226,9 @@ appliedenergistics2:appeng.entity.entitytinytntprimed
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
-enderio:falling_machine
-enderio:owl_egg
 enderio:primed_charge
-natura:imp
-natura:nitrocreeper
+enderio:owl_egg
+enderio:falling_machine
 tconstruct:blueslime
 tconstruct:indestructible
 tconstruct:arrow
@@ -234,6 +237,7 @@ tconstruct:shuriken
 tconstruct:fancy_frame
 tconstruct:throwball
 enderiomachines:weather_rocket
+thermaldynamics:transport
 actuallyadditions:worm
 betterquesting:placeholder
 forestry:cart.beehouse
